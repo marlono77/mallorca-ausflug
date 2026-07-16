@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mallorca-Ausflug · Cala Llombards</title>
+<meta name="description" content="Freust du dich auf den Mallorca-Ausflug? 12.–20. August, Cala Llombards.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ===== Screen 1: Landing (1:1 aus Folie 1) ===== -->
+  <section class="screen screen--landing is-active" id="screen-landing">
+    <div class="deco-circle deco-circle--gold" aria-hidden="true"></div>
+    <div class="deco-circle deco-circle--teal" aria-hidden="true"></div>
+
+    <div class="landing__inner">
+      <p class="kicker kicker--center">CALA LLOMBARDS · 12.–20. AUGUST</p>
+      <h1 class="headline">Freust du dich auf den Mallorca-Ausflug?</h1>
+
+      <div class="button-row">
+        <button class="btn btn--yes" id="btn-yes" type="button">Ja!</button>
+        <button class="btn btn--no" id="btn-no" type="button">Nein</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Screen 2: Tagesplan (Folien 2–10) ===== -->
+  <section class="screen screen--itinerary" id="screen-itinerary">
+    <div class="deco-circle deco-circle--itinerary" aria-hidden="true"></div>
+
+    <div class="itinerary">
+      <div class="itinerary__content">
+        <p class="kicker" id="it-kicker"></p>
+        <div class="tags" id="it-tags"></div>
+        <h2 class="itinerary__title" id="it-title"></h2>
+        <p class="itinerary__body" id="it-body"></p>
+
+        <div class="footer-block" id="it-footer-block">
+          <div class="divider"></div>
+          <div class="footer-pill-row">
+            <span class="pill pill--teal" id="it-footer-label"></span>
+            <p class="footer-text" id="it-footer-text"></p>
+          </div>
+        </div>
+
+        <p class="note" id="it-note"></p>
+      </div>
+
+      <div class="itinerary__media" id="it-media"></div>
+    </div>
+
+    <p class="progress" id="progress"></p>
+  </section>
+
+  <!-- Navigation: Tag-für-Tag vor und zurück, erscheint erst im Reiseplan -->
+  <div class="fab-group" id="fab-group">
+    <button class="fab fab--secondary" id="fab-back" type="button" aria-label="Vorheriger Tag">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M11 18l-6-6 6-6"/>
+      </svg>
+    </button>
+    <button class="fab" id="fab-next" type="button" aria-label="Nächster Tag">
+      <svg id="fab-icon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M13 6l6 6-6 6"/>
+      </svg>
+    </button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
