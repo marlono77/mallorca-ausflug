@@ -98,7 +98,7 @@ const days = [
     body: "Abreisevorbereitungen: packen, Häuschen aufräumen & übergeben. Gegen 15 Uhr zum Flughafen Palma (~1 Std. Fahrt) für den Rückflug 18:30 Uhr.",
     footerLabel: "RÜCKFLUG",
     footerText: "Rückflug 18:30 Uhr ab Palma.",
-    note: "Früh an die Strände: Bei Caló des Moro, s'Almunia, Mondragó und Es Trenc vor 9 Uhr da sein – sonst kein Parkplatz.",
+    note: "",
     images: [],
   },
 ];
